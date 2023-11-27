@@ -3,7 +3,7 @@ package kenny;
 import java.util.Scanner;
 
 public class Day4ClassVSInstance {
-    public class Person {
+    public static class Person {
         private int age;
 
         public Person(int initialAge) {
