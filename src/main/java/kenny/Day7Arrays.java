@@ -31,6 +31,17 @@ import static java.util.stream.Collectors.toList;
  */
 public class Day7Arrays {
 
+    public static void reverseAndPrintOutArray(int n, List<Integer> arr) {
+        String[] newArr = new String[n];
+        for (int i = 0; i < arr.size(); i++) {
+            newArr[i] = String.valueOf(arr.get(i));
+        }
+
+        for (int i = newArr.length -1; i >= 0; i--) {
+            System.out.print(newArr[i]);
+            System.out.print(" ");
+        }
+    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
