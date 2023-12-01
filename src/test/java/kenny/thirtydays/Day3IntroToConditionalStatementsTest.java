@@ -1,4 +1,5 @@
-package kenny;
+package kenny.thirtydays;
+import kenny.thirtydays.Day3IntroToConditionalStatements;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

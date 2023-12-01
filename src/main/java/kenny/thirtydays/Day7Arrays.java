@@ -1,4 +1,4 @@
-package kenny;
+package kenny.thirtydays;
 
 import java.io.BufferedReader;
 import java.io.IOException;

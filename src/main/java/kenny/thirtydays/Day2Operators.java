@@ -1,4 +1,4 @@
-package kenny;
+package kenny.thirtydays;
 
 public class Day2Operators {
     /*

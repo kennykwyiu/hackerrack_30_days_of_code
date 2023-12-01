@@ -1,4 +1,4 @@
-package kenny;
+package kenny.thirtydays;
 
 public class Day3IntroToConditionalStatements {
     public static String checkNumber(int N) {

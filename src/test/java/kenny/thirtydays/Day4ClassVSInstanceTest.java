@@ -1,5 +1,6 @@
-package kenny;
+package kenny.thirtydays;
 
+import kenny.thirtydays.Day4ClassVSInstance;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

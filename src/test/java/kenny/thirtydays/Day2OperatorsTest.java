@@ -1,4 +1,5 @@
-package kenny;
+package kenny.thirtydays;
+import kenny.thirtydays.Day2Operators;
 import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

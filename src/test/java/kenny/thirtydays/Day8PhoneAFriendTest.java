@@ -1,5 +1,6 @@
-package kenny;
+package kenny.thirtydays;
 
+import kenny.thirtydays.Day8PhoneAFriend;
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

@@ -1,4 +1,5 @@
-package kenny;
+package kenny.thirtydays;
+import kenny.thirtydays.Day6OperatorsStringsAndLoops;
 import org.junit.Assert;
 import org.junit.Test;
 
