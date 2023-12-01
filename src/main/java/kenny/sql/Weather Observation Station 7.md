@@ -1,4 +1,3 @@
-	Submissions	Leaderboard	Discussions
 Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
 
 ![img_1.png](img_1.png)
