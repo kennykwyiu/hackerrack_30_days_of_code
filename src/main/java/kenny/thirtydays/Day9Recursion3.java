@@ -11,6 +11,17 @@ public class Day9Recursion3 {
      * <p>
      * The function is expected to return an INTEGER.
      * The function accepts INTEGER n as parameter.
+     *
+     * Function Description
+     * Complete the factorial function in the editor below. Be sure to use recursion.
+     *
+     * factorial has the following paramter:
+     *
+     * int n: an integer
+     * Returns
+     *
+     * int: the factorial of n
+     *
      */
 
     public static int factorial(int n) {
