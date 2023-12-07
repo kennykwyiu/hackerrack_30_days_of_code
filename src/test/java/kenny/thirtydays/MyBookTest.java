@@ -8,7 +8,6 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
 public class MyBookTest {
-
     @Test
     public void testDisplay() {
         String title = "The Great Gatsby";
