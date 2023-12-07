@@ -1,5 +1,6 @@
 package kenny.thirtydays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Day14Scope {
@@ -41,6 +42,15 @@ class Difference {
                 }
             }
         }
+    }
+
+    public void computeDifferenceWithSort() {
+        if (elements.length == 0) {
+            return;
+        }
+
+        Arrays.sort(elements);
+        maximumDifference = elements[elements.length - 1] - elements[0];
     }
 
     // Add your code here
