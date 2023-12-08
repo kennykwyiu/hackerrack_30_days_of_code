@@ -27,4 +27,27 @@ public class Day14ScopeTest {
         difference.computeDifference();
         assertEquals(7, difference.maximumDifference);
     }
+    @Test
+    public void testComputeDifferenceWithSorted() {
+        int[] a = {1, 2, 5};
+        Difference difference = new Difference(a);
+        difference.computeDifferenceWithSort();
+        assertEquals(4, difference.maximumDifference);
+    }
+
+    @Test
+    public void testComputeDifferenceEmptyArrayWithSorted() {
+        int[] a = {};
+        Difference difference = new Difference(a);
+        difference.computeDifferenceWithSort();
+        assertEquals(0, difference.maximumDifference);
+    }
+
+    @Test
+    public void testComputeDifferenceNegativeNumbersWithSorted() {
+        int[] a = {-2, -5, -1, -8};
+        Difference difference = new Difference(a);
+        difference.computeDifferenceWithSort();
+        assertEquals(7, difference.maximumDifference);
+    }
 }
