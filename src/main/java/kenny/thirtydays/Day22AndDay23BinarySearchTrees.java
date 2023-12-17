@@ -1,8 +1,33 @@
 package kenny.thirtydays;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
-public class Day22BinarySearchTrees {
+public class Day22AndDay23BinarySearchTrees {
+
+
+    public static void levelOrder(TreeNode root) {
+        //Write your code here
+        if (root == null) {
+            return;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            System.out.print(node.data + " ");
+
+            if (node.left != null) {
+                queue.offer(node.left);
+            }
+            if (node.right != null) {
+                queue.offer(node.right);
+            }
+        }
+    }
+
     public static int getHeight(TreeNode root) {
         if (root == null) {
             return -1;
