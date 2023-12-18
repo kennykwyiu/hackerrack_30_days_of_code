@@ -2,7 +2,25 @@ package kenny.thirtydays;
 
 import java.util.Scanner;
 
-public class Day15LinkedList {
+public class Day15AndDay24LinkedList {
+
+    public static Node removeDuplicates(Node head) {
+        //Write your code here
+
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        Node curNode = head;
+        while (curNode != null && curNode.next != null) {
+            if (curNode.data == curNode.next.data) {
+                curNode.next = curNode.next.next;
+            }
+            curNode = curNode.next;
+        }
+        return head;
+    }
+
     public static Node insert(Node head, int data) {
         //Complete this method
         Node dummy = new Node(Integer.MIN_VALUE);
