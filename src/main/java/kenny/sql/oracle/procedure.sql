@@ -24,3 +24,27 @@ BEGIN
 	raiseSalary(7369);
 end;
 /
+
+drop PROCEDURE raiseSalary;
+
+CREATE or REPLACE PROCEDURE findEmpNameAndSalAndJob(xno IN emp.empno%type, 
+													name OUT emp.ename%type,
+													xjob OUT emp.job%type, 
+													sal OUT emp.sal%type)
+AS
+BEGIN
+	select ename, job, sal, into xname, sjob, xsal from emp
+	WHERE empno = xno;
+end;
+/
+
+DECLARE
+	name  emp.ename%type;
+	xjob  emp.job%type;
+	sal   emp.sal%type;
+
+BEGIN
+	findEmpNameAndSalAndJob(&xxxx, xname, xjob, xsal);
+	dbms_output.put_line('Employee info: '||xname||' '||xjob||' '||xsal)
+end;
+/
