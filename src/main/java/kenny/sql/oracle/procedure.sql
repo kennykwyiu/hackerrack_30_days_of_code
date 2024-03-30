@@ -48,3 +48,29 @@ BEGIN
 	dbms_output.put_line('Employee info: '||xname||' '||xjob||' '||xsal)
 end;
 /
+
+CREATE or REPLACE PROCEDURE getSalTax(xsal NUMBER, salTax out NUMBER)
+AS
+	x NUMBER :=xsal - 5000;
+BEGIN
+	IF x <= 3000 
+		THEN salTax := 0;
+			dbms_output.put_line('No need to pay tax');
+	ELSIF x <= 3000
+		THEN salTax := x * 0.03 - 0;
+	ELSIF x <= 12000
+		THEN salTax := x * 0.1 - 210;
+	ELSIF x <= 25000
+		THEN salTax := x * 0.2 - 1410;
+	ELSIF x <= 35000
+		THEN salTax := x * 0.25 - 2660;
+	ELSIF x <= 55000
+		THEN salTax := x * 0.3 - 4410;
+	ELSIF x <= 80000
+		THEN salTax := x * 0.35 - 7160;
+	ELSE 
+		salTax := x * 0.45 - 15160;
+	
+	END IF;
+end;
+/
