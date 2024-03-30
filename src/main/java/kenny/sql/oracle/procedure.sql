@@ -74,3 +74,11 @@ BEGIN
 	END IF;
 end;
 /
+
+DECLARE
+	money NUMBER;
+BEGIN
+	getSalTax(&x, money);
+	dbms_output.put_line('Salary tax: '||money)
+END;
+/
